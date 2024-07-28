@@ -1,0 +1,35 @@
+openapi: 3.0.3
+info:
+  title: User Contract
+  version: 1.0.0
+paths:
+  /payment:
+    post:
+      operationId: pay
+      parameters:
+        - name: paymentMethod
+          in: header
+          required: true
+          description: Payment method user prefered to used to pay for his order
+          schema:
+            $ref: '#/components/schemas/PaymentMethod'
+        - name: cardDetails
+          in: header
+          required: true
+          description: Encrypted information passed to make process based on payment method
+          schema:
+            type: string
+
+      tags:
+        - user
+
+      responses:
+        204:
+          description: Created successfully
+
+components:
+  schemas:
+    PaymentMethod:
+      type: string
+      enum: [CreditCard, MasterCard, Fawry, VodafoneCash]
+

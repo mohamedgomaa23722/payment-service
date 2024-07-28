@@ -1,0 +1,25 @@
+group: example
+stage: test
+namespace: cloud-test
+templateApp: payment-template
+container:
+  name: payment-service
+
+deployment:
+  name: js-payment-service-deployment
+
+config:
+  name: payment-config-map-env
+  volume:
+    name: payment-config-map
+
+image:
+  name: microservice-payment:5
+
+port: 8080
+name: js-payment-service
+
+replicas: 1
+
+service:
+  name: payment-svc
