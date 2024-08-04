@@ -1,14 +1,16 @@
+{{with .Values}}
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: {{ .Values.config.name }}
-  namespace: {{ .Values.namespace }}
+  name: {{ .config.name }}
+  namespace: {{ .namespace }}
   labels:
-    group: {{ .Values.group }}
-    stage: {{ .Values.stage }}
+    group: {{ .group }}
+    stage: {{ .stage }}
 
 data:
   application.properties: |-
-    server.port = {{ .Values.port }}
-    spring.application.name= {{ .Values.name }}
+    server.port = {{ .port }}
+    spring.application.name= {{ .name }}
     com.test.check= "test"
+{{end}}
