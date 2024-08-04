@@ -11,3 +11,4 @@ data:
   application.properties: |-
     server.port = {{ .Values.port }}
     spring.application.name= {{ .Values.name }}
+    com.test.check= "test"
