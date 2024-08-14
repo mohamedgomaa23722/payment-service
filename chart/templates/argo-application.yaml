@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: payment-app
+  namespace: argocd
+spec:
+  destination:
+    namespace: cloud-test
+    server: "https://kubernetes.default.svc"
+  project: default
+  source:
+    path: ./chart
+    repoURL: "https://github.com/mohamedgomaa23722/payment-service.git"
+    targetRevision: master
+  syncPolicy:
+    automated:
+      prune: true
+    syncOptions:
+      - CreateNamespace=true
