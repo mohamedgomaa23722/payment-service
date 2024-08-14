@@ -1,4 +1,4 @@
-package com.mg.js_payment_service.generator.impl;
+package com.mg.js_payment_service.generator.mint.user;
 
 import com.mg.js_payment_service.generator.TemplateGenerator;
 

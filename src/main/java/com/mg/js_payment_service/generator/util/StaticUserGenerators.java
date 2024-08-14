@@ -1,6 +1,6 @@
-package com.mg.js_payment_service.generator;
+package com.mg.js_payment_service.generator.util;
 
-import com.mg.js_payment_service.generator.impl.UserGenerator;
+import com.mg.js_payment_service.generator.mint.user.UserGenerator;
 
 public class StaticUserGenerators {
 

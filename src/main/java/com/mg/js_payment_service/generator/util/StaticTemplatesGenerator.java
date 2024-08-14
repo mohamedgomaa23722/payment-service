@@ -1,9 +1,9 @@
-package com.mg.js_payment_service.generator;
+package com.mg.js_payment_service.generator.util;
 
-import com.mg.js_payment_service.generator.impl.ProductGenerator;
+import com.mg.js_payment_service.generator.TemplateGenerator;
 
-import static com.mg.js_payment_service.generator.StaticProductGenerators.vfGenerator;
-import static com.mg.js_payment_service.generator.StaticUserGenerators.vfUser;
+import static com.mg.js_payment_service.generator.util.StaticProductGenerators.vfGenerator;
+import static com.mg.js_payment_service.generator.util.StaticUserGenerators.vfUser;
 
 public class StaticTemplatesGenerator {
 

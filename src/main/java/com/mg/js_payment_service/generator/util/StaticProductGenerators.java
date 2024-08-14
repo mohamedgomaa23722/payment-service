@@ -1,6 +1,6 @@
-package com.mg.js_payment_service.generator;
+package com.mg.js_payment_service.generator.util;
 
-import com.mg.js_payment_service.generator.impl.ProductGenerator;
+import com.mg.js_payment_service.generator.mint.product.ProductGenerator;
 
 public class StaticProductGenerators {
 
