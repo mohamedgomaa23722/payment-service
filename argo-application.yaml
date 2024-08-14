@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: payment-app
+  name: payment-app${SERVICE-NAME}
   namespace: argocd
 spec:
   destination:
